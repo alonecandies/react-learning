@@ -5,7 +5,7 @@ import Task from "./Task";
 function TaskList(props) {
   return (
     <ul>
-      {props.tasks.map((task) => (
+      {props.tasks.map((task,index) => (
         <Task tasks={props.tasks} setTasks={props.setTasks} task={task} key={task.id}></Task>
       ))}
     </ul>
